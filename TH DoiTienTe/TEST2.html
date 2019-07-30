@@ -2,59 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Đổi Tiền Tệ</title>
+
 </head>
 <body>
-<script>
-
-    function conv()
-    {
-     let tVao = document.getElementById("tVao").value;
-     let tRa = document.getElementById("tRa").value;
-     let soTien = parseInt(document.getElementById("soTien").value);
-
-     if(tVao === "USD" && tRa === "VND")
-     {
-         document.getElementById("ketQua").value = soTien*23260;
-     }
-     else
-         if(tVao === "USD" && tRa === "YEN")
-         {
-         document.getElementById("ketQua").value = soTien*108;
-         }
-         else
-             if(tVao === "YEN" && tRa === "VND")
-             {
-                 document.getElementById("ketQua").value = soTien*200;
-             }
-             else
-                 if(tVao === "YEN" && tRa === "USD")
-                 {
-                     document.getElementById("ketQua").value = soTien/108;
-                 }
-                 else
-                     if(tVao === "VND" && tRa === "USD")
-                     {
-                         document.getElementById("ketQua").value = soTien/23260;
-                     }
-                     else
-                         if(tVao === "VND" && tRa === "YEN")
-                         {
-                             document.getElementById("ketQua").value = soTien/200;
-                         }
-                         else
-                             document.getElementById("ketQua").value = soTien;
-
-    }
-</script>
+<script type="text/javascript" src="JS/HOW.js" ></script>
 
 <select id="tVao">
     <option value="VND">VND</option>
     <option value="YEN">YEN</option>
     <option value="USD">USD</option>
 </select>
+
 <input type="text" id="soTien">
-<button type="button" onclick="conv();">CONVERT </button></br>
+<button type="button" onclick="conv();">CONVERT </button>
+</br>
+
 <select id="tRa">
     <option value="VND">VND</option>
     <option value="YEN">YEN</option>

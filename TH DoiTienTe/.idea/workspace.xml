@@ -12,6 +12,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -19,7 +20,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MayTinh1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -47,6 +48,7 @@
       <workItem from="1564448721560" duration="955000" />
       <workItem from="1564449908279" duration="2329000" />
       <workItem from="1564456654329" duration="5258000" />
+      <workItem from="1564474238833" duration="891000" />
     </task>
     <servers />
   </component>

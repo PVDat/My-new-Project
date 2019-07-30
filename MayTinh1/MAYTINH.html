@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>CACULATOR</title>
+</head>
+<body>
+<script>
+
+    function ADD()
+    {
+        let soHang1 = parseInt(document.getElementById("soHang1").value);
+        let soHang2 = parseInt(document.getElementById("soHang2").value);
+        KetQua = soHang1 + soHang2;
+        document.write("Ket qua bang: " + KetQua);
+    }
+    function SUB()
+    {
+        let soHang1 = parseInt(document.getElementById("soHang1").value);
+        let soHang2 = parseInt(document.getElementById("soHang2").value);
+        KetQua = soHang1 - soHang2;
+        document.write("Ket qua bang: " + KetQua);
+    }
+    function MULTI()
+    {
+        let soHang1 = parseInt(document.getElementById("soHang1").value);
+        let soHang2 = parseInt(document.getElementById("soHang2").value);
+        KetQua = soHang1 * soHang2;
+        document.write("Ket qua bang: " + KetQua);
+    }
+    function DIV()
+    {
+        let soHang1 = parseInt(document.getElementById("soHang1").value);
+        let soHang2 = parseInt(document.getElementById("soHang2").value);
+        KetQua = soHang1 / soHang2;
+        document.write"Ket qua bang: " + KetQua);
+    }
+</script>
+<input type="text"  id="soHang1"/>
+<input type="text"  id="soHang2"/>
+
+<button type="button"  onclick="ADD()">+</button>
+<button type="button"  onclick="SUB()">-</button>
+<button type="button"  onclick="MULTI()">x</button>
+<button type="button"  onclick="DIV()">/</button>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let login = prompt("Mời nhập chức vụ: ");
+    let loiNhan = ('');
+    if (login === ("Giám đốc")){
+        loiNhan = ('Chào mừng!');
+    } else {
+        if (login === ("Nhân viên")){
+            loiNhan = ('Mời vào!');
+        } else {
+            loiNhan = ('Không được vào');
+        }
+    }
+    alert(loiNhan);
+</script>
+</body>
+</html>

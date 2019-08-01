@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let year = parseInt(prompt("Enter a year"));
+    let isLeapYear = false;
+    let isDisvisivLeBy4 = year % 4 === 0;
+    if(isDisvisivLeBy4) {
+        let isDisvisivLeBy100 = year % 100 === 0;
+        if (isDisvisivLeBy100) {
+            let isDisvisivLeBy400 = year % 400 === 0;
+            if (isDisvisivLeBy400)
+                isLeapYear = true;
+        } else {
+            isLeapYear = true;
+        }
+    }
+        if (isLeapYear) {
+            alert(year + " is a leaf year");
+        } else {
+            alert(year + " is not a leaf year");
+        }
+</script>
+</body>
+</html>

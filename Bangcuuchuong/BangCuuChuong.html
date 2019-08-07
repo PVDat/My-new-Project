@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let keBang, soHang1, soHang2;
+    let bienDem = parseInt(prompt("Nhap 1 so: "));
+
+    keBang = "<table border='2' width= '1200' cellspacing='0' cellpadding='3'>"
+    soHang1 = soHang2 = 1;
+    while (soHang2 <= 10){
+        keBang = keBang +"<tr>";
+        while (soHang1 <= bienDem) {
+            keBang = keBang + "<th>" + soHang1 + " * " + soHang2 + " = " + soHang1 * soHang2 + "</th>"
+            soHang1++;
+        }
+        keBang = keBang + "<tr>"
+        soHang1 = 1;
+        soHang2++;
+    }
+    keBang= keBang + "<table>";
+    document.write(keBang);
+</script>
+</body>
+</html>

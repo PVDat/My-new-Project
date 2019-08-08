@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2 style="position: absolute; left: 500px" >English words (animals)</h2>
+<p style="position: absolute; top: 185px; left: 145px">In Vietnamese, The word </p>
+<input style="position: absolute; top: 200px; left: 320px" type="text" id="ttAnh" oninput="translator()">
+<p style="position: absolute; top: 185px; left: 500px">means: </p>
+<span style="position: absolute; top: 201px; left: 550px" id="ttViet"></span>
+
+<script>
+    let tdAnh = ['dog','cat', 'pig' ,'buffalo','cow','chicken','dolphin', 'whale', 'eagle', 'pigeon'];
+    let tdViet = ['chó','mèo', 'lợn', 'trâu', 'bò', 'gà', 'cá heo', 'cá voi', 'đại bàng', 'bồ câu'];
+    let tCt = "";
+    let index = 0;
+
+    function translator() {
+
+        for (let i=0; i < tdAnh.length; i++)
+            if (tdAnh[i] === document.getElementById("ttAnh").value)
+            {
+                tCt = tdAnh[i];
+                index = i;
+                document.getElementById("ttViet").innerHTML = tdViet[i];
+                break;
+            }
+            else {
+                tCt = "NONE (Can't find this word)";
+                document.getElementById("ttViet").innerHTML = tCt;
+            }
+    }
+
+
+</script>
+</body>
+</html>

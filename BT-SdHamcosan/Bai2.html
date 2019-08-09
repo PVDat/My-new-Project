@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num=window.prompt('Moi nhap 1 day so: ');
+    let arr = num.toString();
+    let result = [arr[0]];
+
+    for(let x=1; x<arr.length; x++)
+    {
+        if((arr[x-1]%2 === 0)&&(arr[x]%2 === 0))
+        {
+            result.push('-', arr[x]);
+        }
+        else
+        {
+            result.push(arr[x]);
+        }
+    }
+    console.log(result.join(''));
+</script>
+</body>
+</html>

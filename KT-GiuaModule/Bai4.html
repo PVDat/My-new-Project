@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="createArray()">
+<script>
+    let inputArray= new Array(3);
+    let outputArray= [];
+    inputArray[0]=[3,2,1];
+    inputArray[1]=[6,5,4];
+    inputArray[2]=[9,8,7];
+
+    function createArray()
+    {
+        for (let i = 0; i < inputArray.length; i++) {
+            outputArray = outputArray.concat(inputArray[i])
+        }
+
+        console.log(outputArray)
+    }
+</script>
+</body>
+</html>

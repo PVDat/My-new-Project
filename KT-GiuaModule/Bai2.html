@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let inputArray=[];
+    let outputArray=[];
+    let soPhanTu = parseInt(prompt("mang co bao nhieu phan tu"));
+    for (i = 0;i < soPhanTu;i++) {
+        inputArray.push(parseInt(prompt("Nhap phan tu " + i + " cua mang")));
+    }
+    function isPrime(number) {
+        let result = true;
+        if (number < 2){
+            result = false;
+        }
+        else {
+            for (let i = 2;i < number; i++)
+            {
+                if (number % i === 0) {
+                    result = false;
+                    break;
+                }
+            }
+        }
+        return result;
+    }
+    function createArray(array){
+        let arrayCreate = [];
+        for(let i = 0;i<array.length;i++){
+            if(isPrime(array[i])){
+                arrayCreate.push(array[i]);
+            }
+        }
+        return arrayCreate;
+    }
+
+    outputArray = createArray(inputArray);
+
+    alert(outputArray);
+
+</script>
+</body>
+</html>

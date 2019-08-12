@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let inputArray=[
+        [1,2,3],
+        [4,5,6],
+        [7,8,9]
+    ];
+    function sumDiagonal(array) {
+        let sumDiagonals = 0;
+        let arrayLength = array.length;
+
+        for (let i = 0; i < arrayLength; i++)
+        {
+            sumDiagonals += array[i][i];
+        }
+        return sumDiagonals
+    }
+    outputArray = sumDiagonal(inputArray);
+    console.log(outputArray);
+
+</script>
+</body>
+</html>

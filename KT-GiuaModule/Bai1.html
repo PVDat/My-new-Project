@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="inputNumber">
+<input type="button" value="Check" onclick="isPrime()">
+
+<script>
+    function isPrime() {
+
+        let number = parseInt(document.getElementById("inputNumber").value);
+        let result = true;
+
+
+        if (number < 2){
+            result = false;
+        } else {
+            for (let i = 2;i < number; i++)
+            {
+                if (number % i === 0) {
+                    result = false;
+                    break;
+                }
+            }
+        }
+        alert(result);
+    }
+</script>
+</body>
+</html>

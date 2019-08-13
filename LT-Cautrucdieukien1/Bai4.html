@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soThuNhat = parseInt(prompt("nhap so thu nhat"));
+    let soThuHai = parseInt(prompt("nhap so thu hai"));
+    let soThuBa = parseInt(prompt("nhap so thu ba"));
+    let max;
+
+    max = soThuNhat;
+    if(max < soThuHai){
+        max = soThuHai
+        alert(max + " la so lon nhat");
+    } else
+        if (max <soThuBa){
+            max = soThuBa
+            alert(max + " la so lon nhat");
+        } else
+            alert(max + " la so lon nhat");
+
+</script>
+</body>
+</html>

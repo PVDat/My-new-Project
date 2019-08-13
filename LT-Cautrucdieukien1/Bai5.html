@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diemKtra = parseInt(prompt("nhap diem bai kiem tra 1 tiet: "));
+    let diemThiGiuaKi = parseInt(prompt("nhap diem bai thi giua ki: "));
+    let diemThiCuoiKi = parseInt(prompt("nhap diem bai thi cuoi ki: "));
+    let hocLuc= "";
+
+    dTB= (diemKtra+(diemThiGiuaKi*2)+(diemThiCuoiKi*3))/6
+
+    if (dTB >= 9){
+        hocLuc="Gioi";
+    }else if(dTB >=7){
+        hocLuc="Kha";
+    }else if (dTB >= 5){
+        hocLuc="Trung binh";
+    }else if (dTB >= 3){
+        hocLuc="Yeu"
+    } else {
+        hocLuc="Kem"
+    }
+alert(hocLuc)
+
+</script>
+</body>
+</html>

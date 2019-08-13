@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doanhSo = parseInt(prompt("Doanh so ban hang la: "));
+    let phanTramHoaHong;
+    if (doanhSo <=100){
+        phanTramHoaHong=1;
+    } else
+        if (doanhSo <=500){
+            phanTramHoaHong=5;
+        } else
+            if (doanhSo > 1000){
+                phanTramHoaHong=10;
+            }
+    alert("Pham tram hoa hong la: " + phanTramHoaHong + "%")
+
+</script>
+</body>
+</html>

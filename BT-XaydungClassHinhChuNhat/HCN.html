@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<canvas id="rectCanvas" width="1300" height="600" style="border:5px solid#d3d3d3"></canvas>
+
+<script>
+    let Rectangle = function (length, width) {
+        this.length = length;
+        this.width = width;
+
+        this.getLength = function () {
+            return length
+        };
+        this.getWidth = function () {
+            return width
+        };
+        this.getArea = function () {
+            return length * width
+        };
+        this.getCircumference = function () {
+            return (length + width) * 2
+        };
+
+    };
+
+    let rect = new Rectangle(parseInt(prompt("Nhap chieu dai HCN")), parseInt(prompt("Nhap chieu rong HCN")));
+    let length = rect.getLength();
+    let width = rect.getWidth();
+    let area = rect.getArea();
+    let circumference = rect.getCircumference();
+
+    alert("Dien tich HCN= "+area+"; Chu vi HCN= "+circumference);
+
+    let c = document.getElementById("rectCanvas");
+    let ctx = c.getContext("2d");
+
+        ctx.beginPath();
+        ctx.lineWidth = "2";
+        ctx.strokeStyle = "red";
+        ctx.rect(20, 20, length, width);
+        ctx.stroke();
+
+
+</script>
+</body>
+</html>

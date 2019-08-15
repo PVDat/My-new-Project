@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const minCelcius = -273;
+    let Temp = function (Celcius) {
+        this.celcius = Celcius;
+        this.getFahrenheit = function () {
+            return  (9/5*this.celcius) + 32;
+        };
+        this.getK = function () {
+            return this.celcius + 273.15
+        }
+    };
+
+    let Temperature = new Temp(25);
+
+    let f = Temperature.getFahrenheit();
+    let k = Temperature.getK()
+
+    alert("do F tuong ung la: "+ f +"; do K tuong ung la: "+k)
+
+
+</script>
+</body>
+</html>

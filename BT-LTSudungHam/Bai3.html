@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="addifsmaller()">
+<script>
+    function addifsmaller(firstNum, secondNum) {
+        firstNum = parseInt(prompt("Nhap so hang thu nhat"));
+        secondNum = parseInt(prompt("Nhap so hang thu hai"));
+
+        if (firstNum > secondNum){
+            alert("so thu nhat ("+ firstNum + ") lon hon so thu hai ("+secondNum+")");
+        } else {
+            alert(firstNum + secondNum)
+        }
+    }
+</script>
+</body>
+</html>

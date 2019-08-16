@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input  type="text" id="ngoiSao">
+<input type="button" value="Check" onclick="findAStar()">
+</br>
+</br>
+<span id="chomSao"></span>
+<script>
+
+    let arr1 = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+    let arr2 = ["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+    let chomSao ="";
+    let index = 0;
+
+    function findAStar() {
+        for (let i=0; i < arr1.length; i++)
+            if (arr1[i] === document.getElementById("ngoiSao").value)
+            {
+                chomSao = chomSao[i];
+                index = i;
+                document.getElementById("chomSao").innerHTML = arr2[i];
+                break;
+            }
+            else
+            {
+                chomSao = "Can't find this star";
+                document.getElementById("chomSao").innerHTML = chomSao;
+            }
+
+    }
+
+</script>
+</body>
+</html>

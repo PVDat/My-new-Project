@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="value" type="text">
+<select id="origin">
+    <option value="metertofeet">m --> feet</option>
+    <option value="feettometer">feet --> m</option>
+</select>
+<button onclick="caculate()">caculate</button>
+<script>
+
+    let how = document.getElementById("origin").value;
+    let result;
+
+
+        function caculate() {
+            let theNumber = parseInt(document.getElementById("value").value);
+
+            if (how === "metertofeet") {
+                meterToFoot(theNumber);
+            } else {
+                footToMeter(theNumber);
+            }
+        }
+
+        function meterToFoot(meter) {
+            result = meter * 3.279;
+            alert(result);
+        }
+
+        function footToMeter(foot) {
+            result = foot * 0.305;
+            alert(result);
+        }
+
+</script>
+</body>
+</html>

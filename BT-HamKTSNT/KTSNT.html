@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="numb">
+<input type="button" value="Check" onclick="test_prime()">
+<script>
+    function test_prime()
+    {
+        let n = parseInt(document.getElementById("numb").value);
+
+        if (n===1)
+        {
+            alert(false);
+        }
+        else if(n === 2)
+        {
+            alert( true);
+        }else
+        {
+            for(let x = 2; x < n; x++)
+            {
+                if(n % x === 0)
+                {
+                    alert(false);
+                }
+            }
+            alert( true);
+        }
+
+    }
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="giaiThua()">
+<script>
+
+    function giaiThua() {
+        let n = parseInt(prompt("nhap so nguyen bat ki de tinh giai thua cua so do: "));
+        let i=1;
+        let ketQua=1;
+
+        while (i<=n){
+            ketQua *= i;
+            i++;
+        }
+        alert(ketQua);
+    }
+</script>
+</body>
+</html>

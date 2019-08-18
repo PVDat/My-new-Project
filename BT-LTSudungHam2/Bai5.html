@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="getMax()">
+<script>
+
+    function getMax() {
+        let soThuNhat = parseInt(prompt("nhap so thu nhat: "));
+        let soThuHai = parseInt(prompt("nhap so thu hai: "));
+        let soThuBa = parseInt(prompt("nhap so thu ba: "));
+        let max = soThuNhat;
+
+        if(max < soThuHai){
+            max = soThuHai
+        } else if(max <soThuBa){
+            max = soThuBa
+        }
+
+        alert(max + " là số lớn nhất")
+    }
+</script>
+</body>
+</html>

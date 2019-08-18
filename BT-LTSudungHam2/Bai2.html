@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="banKinh">
+<input type="button" onclick="tinhToan()" value="tính"></br>
+<span id="ketQua"></span>
+
+<script>
+
+    let ketQua = "";
+
+    function tinhToan() {
+        let r = parseInt(document.getElementById("banKinh").value);
+        dienTich = Math.PI * r * r;
+        chuVi = Math.PI *r*2;
+
+        ketQua = ("Diện tích hình tròn tương ứng là: " + dienTich + "; chu vi là: "+chuVi);
+        document.getElementById("ketQua").innerHTML = ketQua;
+
+    }
+
+</script>
+</body>
+</html>

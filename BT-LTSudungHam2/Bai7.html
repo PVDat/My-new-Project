@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="Swap" onclick="swap()">
+</br>
+<span id="ppp"></span>
+<script>
+
+    let soThuNhat = parseInt(prompt("nhap so thu nhat: "));
+    let soThuHai = parseInt(prompt("nhap so thu hai: "));
+    function swap() {
+        let swapNum = soThuNhat;
+
+        soThuNhat = soThuHai;
+        soThuHai = swapNum;
+
+        document.getElementById("ppp").innerHTML=(soThuNhat + "; "+ soThuHai)
+    }
+</script>
+</body>
+</html>

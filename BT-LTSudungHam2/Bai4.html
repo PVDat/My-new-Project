@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="Check()">
+<script>
+    function Check() {
+        let numb = 100;
+
+        switch (typeof numb) {
+            case "number":
+                document.write(numb+ " la ki tu so");
+                break;
+            default:
+                document.write(numb+ " khong la ki tu so");
+                break;
+        }
+
+        // if (typeof numb == "number"){
+        //     document.write(numb+ " la ki tu so");
+        // } else {
+        //     document.write(numb+ " khong la ki tu so");
+        // }
+    }
+</script>
+</body>
+</html>

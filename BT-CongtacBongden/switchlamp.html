@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" onclick="sbutton.switch()">
+<script>
+const ON = true;
+const OFF = false;
+let SwitchButton = function () {
+    this.lamp = ElectricLamp;
+    this.status = OFF;
+    this.switch = function () {
+    if (this.status === OFF)
+    {return this.status = ON}
+    else {
+        return this.status = OFF}
+    }
+};
+let ElectricLamp  = function(){
+    this.getStatus = function(){
+        return ElectricLamp.status = ON;
+    }
+
+};
+
+let sbutton = new SwitchButton();
+let eLamp = new ElectricLamp();
+
+    sbutton.switch();
+    eLamp.getStatus();
+
+
+    if (eLamp.status === ON){
+        console.log("Light ON");
+    }else {
+        console.log("Light OFF");
+    }
+    console.log("CT "+sbutton.status);
+
+</script>
+</body>
+</html>

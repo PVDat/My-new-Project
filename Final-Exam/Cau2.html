@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 2</title>
+</head>
+<body>
+<script>
+    let arr = [12,6,3,7,21,5,12,7];
+    let index=parseInt(prompt("Nhập số bạn muốn loại bỏ khỏi mảng ["+arr+"]" ));
+
+    function tryRemoveFromArray(array) {
+        for (i=0; i<array.length-1; i++){
+            if (array[i] === index){
+                array.splice(i,1);
+            }
+        }
+        return array;
+    }
+    console.log(tryRemoveFromArray(arr));
+    alert("Ta có mảng mới là: ["+tryRemoveFromArray(arr)+"]");
+</script>
+</body>
+</html>

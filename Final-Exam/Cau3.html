@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 3</title>
+</head>
+<body>
+<script>
+    let inputNum = 39;
+
+    function printFibonacci(number) {
+        let a = 1;
+        let b = 1;
+        let temp;
+        while (a < number){
+            document.write(a+"</br>");
+            temp = a+b;
+            a = b;
+            b = temp;
+    }
+    return a;
+    }
+    printFibonacci(inputNum);
+</script>
+</body>
+</html>
